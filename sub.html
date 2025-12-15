@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEE MINYOUNG PORTFOLIO</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+
+<body>
+    <!-- Blue Vignette Overlay -->
+    <div class="vignette"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" data-target="home" class="logo-link">MINYOUNG</a></li>
+            <li><a href="#" data-target="work">Work</a></li>
+            <li><a href="#" data-target="about">About</a></li>
+            <li><a href="#" data-target="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active">
+            <!-- Floating Object (The "Plastic" book/poster substitute) -->
+            <div class="floating-obj-wrapper" id="floatingObj">
+                <div class="floating-obj-inner">
+                    <img src="https://picsum.photos/400/600" alt="Portfolio Highlight" class="obj-img">
+                </div>
+            </div>
+
+            <!-- Typography Layout -->
+            <div class="typography-layout">
+                <div class="line line-1">
+                    <span class="font-italic">the</span>
+                    <span class="font-bold">MINYOUNG</span>
+                    <span class="font-serif">PORTFOLIO</span>
+                </div>
+                <div class="line line-2">
+                    <span class="font-bold">WEB</span>
+                    <span class="font-italic">design</span>
+                </div>
+            </div>
+
+            <!-- Description Text (Small) -->
+            <div class="description-text">
+                <p>
+                    Minyoung's fresh design portfolio vibing out of Korea.<br>
+                    Crafting digital dreams into reality with killer branding,<br>
+                    and building dope websites.
+                </p>
+            </div>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section id="work" class="page-section hidden">
+            <div class="content-wrapper">
+                <h2 class="section-title">Selected Works</h2>
+                <ul class="work-list">
+                    <li class="work-item">
+                        <span class="work-number">01</span>
+                        <span class="work-title">Orbit Studio</span>
+                        <span class="work-cat">Branding / Web</span>
+                    </li>
+                    <li class="work-item">
+                        <span class="work-number">02</span>
+                        <span class="work-title">Seoul Vibes</span>
+                        <span class="work-cat">Photography / UI</span>
+                    </li>
+                    <li class="work-item">
+                        <span class="work-number">03</span>
+                        <span class="work-title">Plastic Dreams</span>
+                        <span class="work-cat">Interaction / 3D</span>
+                    </li>
+                    <li class="work-item">
+                        <span class="work-number">04</span>
+                        <span class="work-title">Modernists</span>
+                        <span class="work-cat">Typography</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="page-section hidden">
+            <div class="content-wrapper split-layout">
+                <div class="about-text-area">
+                    <h2 class="section-title">Hello, I'm Minyoung.</h2>
+                    <p class="about-bio">
+                        A multidisciplinary designer and front-end developer based in Seoul.
+                        I specialize in creating immersive digital experiences that blend
+                        aesthetic beauty with functional precision.
+                    </p>
+                    <p class="about-bio">
+                        With a passion for typography and motion, I strive to make the web
+                        a more interesting place, one pixel at a time.
+                    </p>
+                </div>
+                <!-- Optional: Add Profile Image Here if needed -->
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="page-section hidden">
+            <div class="content-wrapper center-layout">
+                <h2 class="section-title">Let's Create Together</h2>
+                <a href="mailto:minyoung@example.com" class="big-email-link">minyoung@example.com</a>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Github</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script -->
+    <script src="js/sub.js"></script>
+</body>
+
+</html>
