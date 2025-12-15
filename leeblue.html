@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍길동 | 포트폴리오</title>
+  <style>
+    /* 기본 스타일 */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0078ff;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    nav a:hover { color: #0078ff; }
+
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: white;
+    }
+    #home h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+    #home p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    #about, #projects, #contact {
+      background: white;
+      margin-top: 50px;
+      border-radius: 10px;
+      padding: 60px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h3.section-title {
+      font-size: 32px;
+      color: #0078ff;
+      margin-bottom: 30px;
+      border-left: 6px solid #0078ff;
+      padding-left: 10px;
+    }
+
+    /* About */
+    #about p {
+      line-height: 1.8;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .project {
+      background: #f9fbff;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .project h4 {
+      color: #0078ff;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .project p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* Contact */
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      resize: none;
+    }
+    button {
+      background: #0078ff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #005fcc; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f0f4f8;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>홍길동</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>안녕하세요 👋<br>프론트엔드 개발자 홍길동입니다</h2>
+    <p>사용자 경험과 깔끔한 인터페이스를 추구하는 웹 개발자</p>
+  </section>
+
+  <section id="about">
+    <h3 class="section-title">About Me</h3>
+    <p>
+      안녕하세요, 저는 웹 프론트엔드 개발을 전문으로 하는 홍길동입니다.<br>
+      HTML, CSS, JavaScript, React를 활용한 인터랙티브 웹 구축에 관심이 많습니다.<br>
+      디자인 감각과 코드 품질 모두를 중요하게 생각하며, 새로운 기술을 배우는 것을 좋아합니다.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="project-grid">
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=1" alt="프로젝트 이미지">
+        <h4>포트폴리오 웹사이트</h4>
+        <p>HTML, CSS, JS를 사용하여 반응형 개인 사이트를 제작했습니다.</p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=2" alt="프로젝트 이미지">
+        <h4>Todo App</h4>
+        <p>로컬스토리지를 이용한 할 일 관리 애플리케이션입니다.</p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/250?random=3" alt="프로젝트 이미지">
+        <h4>Weather Dashboard</h4>
+        <p>OpenWeather API를 활용한 날씨 정보 시각화 웹앱입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3 class="section-title">Contact</h3>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <textarea rows="5" placeholder="메시지를 입력하세요" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Hong Gil-dong. All rights reserved.
+  </footer>
+
+  <script>
+    // 폼 제출 시 알림
+    function sendMessage(e) {
+      e.preventDefault();
+      alert('메시지가 성공적으로 전송되었습니다! 감사합니다 😊');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
