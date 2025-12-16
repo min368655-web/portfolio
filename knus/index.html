@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="이노그리드 사이트 정의입니다">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="yulssem">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이노그리드</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main_style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://kit.fontawesome.com/672e368b20.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="">
+  <div class="wrap">
+    <header class="">
+      <div class="inner">
+        <h1><a href="#"><img src="./images/logo.png" alt="한체"></a></h1>
+        <nav>
+          <ul class="gnb">
+            <li><a href="#">학교정보</a>
+              <ul class="sub">
+                <li><a href="#">총장실</a></li>
+                <li><a href="#">홍보관</a></li>
+                <li><a href="#">학교기구</a></li>
+                <li><a href="#">학교현황</a></li>
+                <li><a href="#">캠퍼스안내</a></li>
+              </ul><!-- //.sub -->
+            </li>
+            <li><a href="#">입시안내</a>
+              <ul class="sub">
+                <li><a href="#">대학입시</a></li>
+                <li><a href="#">대학원입시</a></li>
+                <li><a href="#">입시안내</a></li>
+              </ul><!-- //.sub -->
+            </li>
+            <li><a href="#">대학/대학원</a>
+              <ul class="sub">
+                <li><a href="#">대학</a></li>
+                <li><a href="#">대학원</a></li>
+              </ul><!-- //.sub -->
+            </li>
+            <li><a href="#">학사정보</a>
+              <ul class="sub">
+                <li><a href="#">교육과정</a></li>
+                <li><a href="#">교원양성과정</a></li>
+                <li><a href="#">학사일정</a></li>
+                <li><a href="#">등록</a></li>
+                <li><a href="#">수업</a></li>
+                <li><a href="#">학적</a></li>
+                <li><a href="#">증명서 발급</a></li>
+              </ul><!-- //.sub -->
+            </li>
+            <li><a href="#">대학생활</a>
+              <ul class="sub">
+                <li><a href="#">장애학생 지원한내</a></li>
+                <li><a href="#">장학안내</a></li>
+                <li><a href="#">학자금 대출 안내</a></li>
+                <li><a href="#">병무안내</a></li>
+                <li><a href="#">학생증발급안내</a></li>
+              </ul><!-- //.sub -->
+            </li>
+            <li><a href="#">대회정보</a>
+                <ul class="sub">
+                <li><a href="#">대회소식</a></li>
+                <li><a href="#">올림픽게임</a></li>
+                <li><a href="#">아시안게임 </a></li>
+                <li><a href="#">유니버시아드대회</a></li>
+                <li><a href="#">동아시아경기대회</a></li>
+                <li><a href="#">세계선수권대회</a></li>
+                <li><a href="#">국제대회</a></li>
+                <li><a href="#">전국체전</a></li>
+                <li><a href="#">대표선발현황</a></li>
+            </li>
+          </ul>
+        </nav>
+        <div class="right">
+          <a href="#" class="af">Edu Square</a>
+          <a href="#" class="af">채용</a>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div><!-- //.inner -->
+      <div class="ham_menu">
+        <div class="container">
+          <h2>전체메뉴</h2>
+          <div class="all_con">
+            <ul class="list">
+              <li class="">
+                <button type="button">학교정보</button>
+                <ul class="sub_list">
+                  <li><a href="#">총장실</a></li>
+                  <li><a href="#">홍보관</a></li>
+                  <li><a href="#">학교기구</a></li>
+                  <li><a href="#">학교현황</a></li>
+                  <li><a href="#">캠퍼스안내</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+              <li>
+                <button type="button">입시안내</button>
+                <ul class="sub_list">
+                  <li><a href="#">대학입시</a></li>
+                  <li><a href="#">대학원입시</a></li>
+                  <li><a href="#">입시안내</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+              <li>
+                <button type="button">대학/대학원</button>
+                <ul class="sub_list">
+                  <li><a href="#">대학</a></li>
+                  <li><a href="#">대학원</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+              <li>
+                <button type="button">학사정보</button>
+                <ul class="sub_list">
+                  <li><a href="#">교육과정</a></li>
+                  <li><a href="#">교원양성과정</a></li>
+                  <li><a href="#">학사일정</a></li>
+                  <li><a href="#">등록</a></li>
+                  <li><a href="#">수업</a></li>
+                  <li><a href="#">증명서발급</a></li>
+                  <li><a href="#">군복무중 취득학점</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+            </ul><!-- //.list -->
+            <ul class="list">
+              <li>
+                <button type="button">대학생활</button>
+                <ul class="sub_list">
+                  <li><a href="#">장애학생 지원안내</a></li>
+                  <li><a href="#">장학안내</a></li>
+                  <li><a href="#">학자금 대출 안내</a></li>
+                  <li><a href="#">병무안내</a></li>
+                  <li><a href="#">학생증 발급 안내</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+              <li>
+                <button type="button">대회정보</button>
+                <ul class="sub_list">
+                  <li><a href="#">대회소식</a></li>
+                  <li><a href="#">올림픽게임</a></li>
+                  <li><a href="#">아시안게임</a></li>
+                  <li><a href="#">유니버시아드 대회</a></li>
+                  <li><a href="#">동아시아경기대회</a></li>
+                  <li><a href="#">세계선수권대회</a></li>
+                  <li><a href="#">국제대회</a></li>
+                  <li><a href="#">전국체전</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+              <li>
+                <button type="button">천마광장</button>
+                <ul class="sub_list">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">Q&A</a></li>
+                  <li><a href="#">자료실</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                </ul><!-- //.sub_list -->
+              </li>
+            </ul><!-- //.list -->
+          </div><!-- //.all_con -->
+        </div><!-- //.container -->
+      </div><!-- //.ham_menu -->
+    </header>
+    <main>
+      <div class="main_visual">
+        <div class="inner slide">
+          <div class="slide_visual swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide slide1">
+                <div class="img_box">
+<!--<img src="./images/한체대/main1.jpg" alt="wep"> -->
+                </div>
+                <div class="txt_area">
+                  <div class="tit">
+                    <p>전문체육 중심 대학!</p>
+                    <p>국민건강생활체육 선도대학!!</p>
+                  </div><!-- //.tit -->
+                  <div class="txt">
+                    <p>한국체육대학교를 방문해주신 여러분을</p>
+                    <p>진심으로 환영합니다.</p>
+                  </div>
+                  <a href="#" class="more">
+                    <span>자세히 보기 </span>
+                    <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </li>
+              <li class="swiper-slide slide2">
+                <div class="txt_area">
+<!--  <div class="sub_txt">solution</div> -->
+                  <div class="tit">
+                    <p>전문체육 중심 대학!</p>
+                    <p>국민건강생활체육 선도대학!!</p>
+                  </div><!-- //.tit -->
+                  <div class="txt">
+                    <p>한국 체육대학교는 혁신적 교육과 훈련으로 스포츠의 미래를 이끌어가며,</p>
+                    <p>사회에 긍정적인 변화를 일으킬 것입니다.</p>
+                  </div>
+                  <a href="#" class="more"><span>자세히 보기 </span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </li>
+              <li class="swiper-slide slide3">
+                <div class="txt_area">
+<!--   <div class="sub_txt">solution</div> -->
+                  <div class="tit">
+                    <p>전문체육 중심 대학!</p>
+                    <p>국민건강생활체육 선도대학!!</p>
+                  </div><!-- //.tit -->
+                  <div class="txt">
+                    <p>한국 체육 대학교는 미래를 준비하고 스포츠로</p>
+                    <p>세상을 변화시키는 데 최선을 다 할 것입니다.</p>
+                  </div>
+                  <a href="#" class="more"><span>자세히 보기 </span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </li>
+              <li class="swiper-slide slide4">
+                <div class="txt_area">
+<!--  <div class="sub_txt">solution</div> -->
+                  <div class="tit">
+                    <p>전문체육 중심 대학!</p>
+                    <p>국민건강생활체육 선도대학!!</p>
+                  </div><!-- //.tit -->
+                  <div class="txt">
+                    <p>체육의 가치를 널리 알리고,</p>
+                    <p>더 나은 세상을 만들어가는데 기여할 것입니다.</p>
+                  </div>
+                  <a href="#" class="more"><span>자세히 보기</span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- //.slide_visual -->
+          <div class="pager">
+            <button type="button" class="left">&larr;</button>
+            <div class="box">
+              <div class="txt_box">
+                <span class="num">1</span>
+                /
+                <span class="total">6</span>
+              </div><!-- //.txt_box -->
+              <div class="btn_box">
+                <i class="fa-solid fa-pause"></i>
+                <!-- <i class="fa-solid fa-play"></i> -->
+              </div><!-- //.btn_box -->
+            </div><!-- //.box -->
+            <button type="button" class="right">&rarr;</button>
+          </div>
+        </div>
+      </div><!-- //.main_visual -->
+      <section class="info">
+        <h2 class="blind">회사소개</h2>
+        <div class="article_top inner">
+          <div class="slide">
+            <div class="swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <span class="tit">대회일정</span>
+                    <p class="txt">[체조]전국체육대회(사전경기)</p>
+                    <span class="day">2025-09-30~2025-09-30</span>
+                  </a>
+                </li>
+                <li class="swiper-slide"><a href="#">
+                    <span class="tit">대회일정</span>
+                    <p class="txt">[유도]칭다오 그랑프리 유도대</p>
+                    <span class="day">2025-09-26~2025-09-28</span>
+                  </a></li>
+                <li class="swiper-slide"><a href="#">
+                    <span class="tit">대회일정</span>
+                    <p class="txt">[유도]2025 아시아청소년유도선수권</p>
+                    <span class="day">2025-09-13~2025-09-14</span>
+                  </a></li>
+              </ul>
+            </div><!-- //.swiper -->
+          </div><!-- //.slide -->
+          <a href="#" class="more">더 보기 <span>+</span></a>
+        </div><!-- //.article_top -->
+        <div class="article_bottom inner">
+          <article class="box1 box">
+            <em>캠퍼스 소식</em>
+            <p>
+              KNSU NEWS
+            </p>
+            <div class="txt_b">
+              <span>코리아 고마워요!<br>
+                '육상 신흥강국 보츠와 나, 한국서 세계선수권 <br>
+              준비중'</span>
+              <a href="#" class="more">
+                자세히 보기
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div><!-- //.txt_b -->
+          </article>
+          <div class="box_all">
+            <div class="box_all_1">
+              <article class="box2 box">
+                <em>메타버스(Mateverse)</em>
+                <p>미래도서관운영</p>
+                <!--<img src="images/ico_rnd.png" alt=""> -->
+                <div class="txt_b">
+                  <span>도서관 북서비스(8층)<br>학기 중 이용시간 연장 안내</span>
+                  <a href="#" class="more">
+                    R&D
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div><!-- //.txt_b -->
+              </article>
+              <article class="box3 box">
+                <em>취업상담 </em>
+                <p>취ㆍ창업의 모든 것!</p>
+                <img src="./images/udy.gif" alt="" class="b_img">
+                <div class="txt_b">
+                  <span>천마톡에게<br>물어보세요!</span>
+                </div><!-- //.txt_b -->
+              </article>
+            </div><!-- //.box_all_1 -->
+            <div class="box_all_2">
+              <article class="box4 box">
+                <em>KNSU미디어</em>
+                <p>홈페이지개설</p>
+                <div class="txt_b">
+                  <span>학보사ㆍ방송국ㆍ교지<br>통합미디어 플랫폼</span>
+                  <a href="#" class="more">
+                    바로가기
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div><!-- //.txt_b -->
+              </article>
+              <article class="box5 box">
+                <em>2025년 2학기</em>
+                <p>대학(원) 재학생 등록금 <br>납부안내</p>
+                <!-- <img src="images/innobot.gif" alt="" class="b_img"> -->
+                <div class="txt_b">
+                  <span>2025학년도 2학기<br>대학(원)재학생등록금
+                    납부안내</span>
+                  <a href="#" class="more">
+                    바로가기
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div><!-- //.txt_b -->
+              </article>
+            </div><!-- //.box_all_2 -->
+          </div><!-- //.box_all -->
+        </div><!-- //.article_bottom -->
+      </section><!-- //.info -->
+
+
+      
+      <section class="motion">
+        <div class="inner">
+          <div class="tit">
+            <b data-aos="fade-up" data-aos-delay="50">KOREA<br>
+              NATIONAL</b>
+            <h2 data-aos="fade-up" data-aos-delay="250">SPORT<br>
+              UNIVERSITY</h2>
+            <p data-aos="fade-up" data-aos-delay="550"><span>스포츠로 세상을</span>연결하는 스포츠 혁신리더</p>
+          </div><!-- //.tit -->
+          <div class="circle_box">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+          </div><!-- //.circle_box -->
+        </div><!-- //.inner -->
+
+
+
+      
+      </section><!-- //.motion -->
+    
+
+      <section class="company">
+        <div class="inner">
+          <h2 class="tit_eng">KOREA NATIONAL SPORT UNIVERSITY</h2>
+          <ul>
+            <li>
+              <img src="./images/이걸로수정.jpg" alt="">
+              <h3>입시안내</h3>
+              <div class="txt">
+                <em>수시ㆍ정시 모집요강</em>
+                <p>2027학년도 대학입학전형 기본계획 알림<br>※ 본 대학입학전형 기본계획은 『고등교육법 시행령 』
+                  제 22조 제 3항 및 한국대학교육협의회 심의 결과 등의 이유로 추후 변경될 수 있으므로, 2027학년도 수시 및 정시모집에
+                  대한 최종 확정 내용은 원서접수 이전에 본교 대학입시 홈페이지에서 확인하시기 바랍니다.!
+                </p>
+                <a href="#" class="more af">바로가기</a>
+              </div><!-- //.txt -->
+            </li>
+            <li>
+              <img src="./images/pexels-anete-lusina-16513602.jpg" alt="">
+              <h3>대학ㆍ대학원</h3>
+              <div class="txt">
+                <em>공지사항</em>
+                <p>2025학년도 한국체육대학교 국제학술대회 개최 안내<br>
+                 한국체육대학교 국제학술대회와 관련하여 포스터 발표 접수를 아래와 같이 진행하고자 하오니,
+              많은 관심과 적극적인 참여 부탁드립니다.</p>
+                <a href="#" class="more af">바로가기</a>
+              </div><!-- //.txt -->
+            </li>
+            <li>
+              <img src="./images/pexels-amar-13965335.jpg" alt="">
+              <h3>학사정보</h3>
+              <div class="txt">
+                <em>수강신청</em>
+                <p> 수강신청은 한 학기 전에 미리 시행한다. 교내 각 실습실이나 각 가정에서
+                  본교 수강신청시스템 또는 수강신청앱으로 신청 가능합니다!<br>
+                  수강신청 확인 철저 ★  컴퓨터 조작 미숙 등 부주의로 인한 수강신청 누락 등의 사례가 발생하지 않도록 주의하여 주시고, 반드시 수강신청 후 전산으로 수강신청내역을 재확인※ 수강신청이 누락되어 “F(0)”처리 되지 않도록 유의하세요!
+                </p>
+                <a href="#" class="more af">바로가기</a>
+              </div><!-- //.txt -->
+            </li>
+            <li>
+              <img src="./images/pexels-anete-lusina-16513604.jpg" alt="">
+              <h3>대학생활</h3>
+              <div class="txt">
+                <em>장학안내</em>
+                <p>직전학기 취득학점 12학점 이상 및 평점평균 2.5점 이상
+                  ★ 계절수업, 현장실습, 해외인턴십, 이동수업, 집중수업, 특별학점으로 취득한 학점 및 성적은 교내장학생 선발 심사에 적용되지 않음 유의 ★
+                  [한국체육대학교 학사운영규정 제66조(성적인정) / 한국체육대학교 특별학점 인정에 관한 규정 제8조(성적기재)]</p>
+                <a href="#" class="more af">바로가기</a>
+              </div><!-- //.txt -->
+            </li>
+            <li class="on">
+              <img src="./images/pexels-cottonbro-4753897.jpg" alt="">
+              <h3>대회정보</h3>
+              <div class="txt">
+                <em>대회소식</em>
+                <p>하계유니버시아드대회<br>
+                한국체육대학교는 2025년 7월 23일(수)부터 7월 26일(토)까지 개최되는 제32회 2025 라인 루르 하계유니버시아드대회
+              세계대학경기대회(하계유니버시아드대회)에 출전합니다. 특히 단체전에는 체육학과 4학년 이주환 학생이 출천하여
+            학교의 명예를 빛낼 예정입니다. 재학생과 졸업생 선수들의 선전을 기원하며, 많은 관심과 응원 부탁드립니다.</p>
+                <a href="#" class="more af">바로가기</a>
+              </div><!-- //.txt -->
+            </li>
+          </ul>
+        </div><!-- //.inner -->
+      </section><!-- //.company -->
+      <section class="customer con">
+        <div class="inner">
+          <h2 class="tit_eng">Physical education news</h2>
+          <a href="#" class="more"><em>더보기</em> <i class="fa-solid fa-arrow-right"></i></a>
+        </div><!-- //.inner -->
+        <div class="slide_wrap swiper">
+          <div class="swiper-wrapper">
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                   <img src="./images/총-1700701298468-61657cfa9321.avif" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>[KNSB NEWS] 2024학년도 후기 학위수여식</em>
+                  <p>문원재 총장은 식사에서 새로운 시작을 앞둔 졸업생들에게 따뜻한 격려와 응원의 메시지를 전했습니다.</p>
+                  <span>총장 식사 이후 학위증서 및 교원자격증 수여가 이어졌습니다.이번 학위수여식에서는 일반대학원 박사 4명, 석사 14명, 특수대학원 석사 99명, 학사 75명 등 총 192명이 학위를 받았습니다.
+                    마지막 교가 제창과 폐회를 끝으로 2024학년도 후기 학위수여식은 마무리됐습니다.(Q. 이번 학기 졸업을 하게 됐는데 소감이 어떤지?)한국체대를 빛낸 학우들은 이제 학교를 떠나 새로운 도전을 향해 나아갑니다.KNSB 이원준입니다.
+                  </span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="images/18e87d80b7baf19e97da81441a188d7b.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>종합 4위의 주역, 한국체대가 빛낸U대회</em>
+                  <p>KNSU MEDIA</p>
+                  <span>2025년 하계 세계대학경기대회에서 우리 대학은 20개의
+                    메달 (졸업생 포함)을 획득했다. 이는 대한민국이 따낸 57개의
+                    메달 중 52.6%로 절반 이상을 차지하는 비율이다. 위 왼쪽부터김정윤(체육 24), 서건우(체육 22) 학우, 아래 왼쪽부터 박예린(체육 25), 문예은(체육 24), 김윤서(체육 24) 학우다.
+                  </span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="images/602124777f6f752684cd305a561fb913.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>'파리 3관왕' 임시현, 안산 물리치고 양궁 월드컵 3차 첫 우승</em>
+                  <p>혼성 단체전 금메달 수확한 임시현과 김우진</p>
+                  <span>(서울=연합뉴스) 안홍석 기자 = 2024 파리 올림픽 3관왕 임시현(한국체대)이 2020 도쿄 올림픽 3관왕 안산(광주은행)을 물리치고 2025 현대 양궁 월드컵 3차 대회 여자 개인전 우승을 차지했다.
+                    임시현은 8일 튀르키예 안탈리아에서 열린 대회 마지막 날 리커브 여자 개인전 결승에서 안산을 6-0(28-27 29-28 31-29)으로 완파하고 시상대 정상에 섰다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                   <img src="images/행복기숙사 (1).jpeg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>행복기숙사 본교생 494명 입주 가능</em>
+                  <p>행복기숙사(현 206 행복관) 2026년 1월 개관</p>
+                  <span>한국체대 행복기숙사는 서울권 최초로 국립대학교 부지를 활용한 연합형 행복기숙사다. 
+                    총 수용인원은 704명으로 우리 대학 재학생 494명(70%), 인근 대학 재학생 210명(30%)이 
+                    입주할 예정이다. 비슷한 방식으로 운영되는 인근 대학의 사례로는 인천대학교 
+                    행복기숙사(수용 816명, 재학생 비율 80%), 서울과학기술대학교 행복기숙사
+                    (수용 1,000명, 재학생 비율 70%)가 있다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/성승민_4623.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>성승민, 2025 UIPM 월드컵 2연속 입상</em>
+                  <p>2025 국제근대5종연맹(UIPM) 월드컵 파이널 여자부 결승</p>
+                  <span>한국 근대5종 간판 성승민 학우(체육 23)가 7월 6일 이집트 알렉산드리아에서 열린 
+                    2025 국제근대5종연맹(UIPM) 월드컵 파이널 여자부 결승에서 은메달을 획득했다. 
+                    성 학우는 지난 5월 불가리아에서 열린 3차 월드컵에서도 은메달을 획득하면서 
+                    장애물 경기 도입 이후 한국 최초 메달권에 이름을 올렸다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/대학지도150.jpeg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>체육과학관이 도약관으로 새 옷 입은 교내 건물</em>
+                  <p>교내에 있는 17개 건물 중 기존 명칭을 유지하는 3곳을 제외하고 건물 명칭이 변경</p>
+                  <span>천마생활관은 ‘106 천마관’, 체육과학관은 ‘105 도약관’, 실내수영장은 ‘104 수영장’, 
+                    본관 및 연구실동은 ‘100 본관’, 도서관 및 학생회관은 ‘202 진리관’으로 바뀌었다. 
+                    이외에도 수위실은 ‘109 경비실’, 철골주차장은 ‘108 창조관’, 종합운동장 부속실은 
+                    ‘107 도전관’, 업무지원실은 ‘101 차량지원실’, 실내빙상장과 양궁장은 ‘207 월계관’으로 변경됐다.
+                     넘버링은 천마상을 기준으로 
+                    본관(100)을 마주 볼때 왼쪽은 100번 대, 오른쪽은 200번 대 번호를 부여했다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/people-2560831_1280.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>성장의 씨앗 뿌리고 땀방울로 키워낸 방학</em>
+                  <p>방학도 경기장 위에서!</p>
+                  <span>여름 휴가철, 해변은 여행객들로 붐비고 공항에는 관광객들로 가득하다. 
+                    보통, 방학은 휴식을 가질 수 있는 자유시간을 의미한다. 하지만 체육학과 학우들에게는 조금 다르다. 
+                    몸은 잠시 쉬어갈 수 있어도, 선수로서의 마음가짐만큼은 놓을 수 없기 때문이다. 
+                    그들의 방학은 어떠한지 8명의 학우 이야기를 들어봤다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/man-498473_1280.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>[2026 밀라노 특집] ‘설원 F1’ 김윤지가 선보일 질주</em>
+                  <p>첫 대회에서 최선을 다해 의미 있는 경기를 하고 싶다.</p>
+                  <span>2026 밀라노 코르티나담페초 동계올림픽과 패럴림픽이 반년 앞으로 다가왔다. 
+                    현재 패럴림픽 출전권을 얻고 훈련에 돌입한 학우가 있다. 
+                    한국 여자 좌식 스키의 새 역사를 쓰고 있는 김윤지 학우(특수체육교육 25)가 그 주인공이다. 
+                    4년 만에 한국 노르딕 중심에 오른 그의 이야기를 들어보자.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+               <img src="./images/36e556b4f3b874572676059d24ecb964.jpg" alt="앙골라 산업고등기술센터">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>유례없는 더위 속, 노동자와 선수 모두 ‘체력전’</em>
+                  <p>태양 아래서 버티는 근로자들!</p>
+                  <span>폭염특보가 6월부터 이어지고 있다. 이에 따라 최근 근로 현장에서 온열질환자가 빈번히 발생하고 있다. 
+                    지난 7월 8일 경북 구미의 한 산업단지에서 발생한 산업재해는 폭염 속 노동자가 위험에 처해있다는 
+                    사실을 알려주는 대표적인 사례다. 산재가 발생한 당일, 구미의 낮 기온은 37도에 달했다.
+                     햇볕은 아스팔트를 녹일 듯 내리쬐고, 작업장은 뜨겁게 달아오른 금속과 기계음으로 숨조차 쉬기 어려웠다. 
+                     하지만 몸을 식혀줄 수 있는 건 미약한 송풍기 바람뿐이었다. 점심 무렵 땀에 전 작업복은 몸에 달라붙어 
+                     숨이 가빠왔고, 갈증으로 목이 타들어 갔다. 그리고 몇 분 뒤, 그는 그대로 쓰러졌고 다시 일어나지 못했다. 
+                     발견 당시 체온은 40.2도였다. 다수의 일용직 이주 노동자들이 투입된 대형 현장이었으나, 
+                    현장은 기본적인 휴식 시간 보장과 냉방 등의 기본 수칙조차 제대로 지켜지지 않았다.</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+          </div>
+        </div><!-- //.slide_wrap -->
+      </section><!-- //.customer -->
+      <section class="blog con">
+        <div class="inner">
+          <h2 class="tit_eng">Notice</h2>
+          <a href="#" class="more"><em>더보기</em><i class="fa-solid fa-arrow-right"></i></a>
+        </div><!-- //.inner -->
+
+
+
+        <div class="slide_wrap swiper">
+          <div class="swiper-wrapper">
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/런ad4058b98ce2cedb1444c0ecfa069d18.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>행사기간 : 2025년 9월16일(화) ~ 9월29일(월) </em>
+                  <p>[공지] 2025학년도 하반기 ISIC국제학생증 발급비 지원행사 안내</p>
+                  <span>2025-09-15</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/이노그리드 농구 (1).jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>등록기간 : 2025년 9월 11일(목) 18:00까지</em>
+                  <p>한국체육대학교 조교(교육공무원) 공개채용 최종합격자 공고</p>
+                  <span>2025-07-18</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/도서관.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>이용시간 : 주중 09:00~18:00까지</em>
+                  <p>[학생상담]2025학년도 학생상담센터 이용 안내</p>
+                  <span>2025-09-21</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/football-4743430_1280.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>온라인 행사기간: 2025년 9월16일(화)~9월29일(월)</em>
+                  <p>[공지] 2025학년도 하반기 ISIC국제학생증 발급비 지원행사 안내</p>
+                  <span>2025-09-13</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/영어-2562325_1280.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>휴강안내 : 8월 25일(월) ~ 8월 29일(금)</em>
+                  <p>2025학년도 2학기 교양영어Ⅱ 및 영어와스포츠 수업(휴강) 안내</p>
+                  <span>2025-08-21</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/봉사-386673_1280.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>강의기간 : 2025년 8월 25일(월) ~ 12월 15일(월)</em>
+                  <p>2025학년도 2학기 사회봉사Ⅱ 과목 안내</p>
+                  <span>2025-08-23</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/자매-1606761568499-6d2451b23c66.avif" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>신청기간 : 2025년 8월 25일(월) ~ 8월 29일 (금)</em>
+                  <p>[공지] 2026학년도 자매대학 교환학생 파견대상자 모집</p>
+                  <span>2025-08-21</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/bg_ep.png" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>무료 등록기간 안내 : ~ 2025년 10월 6일(월)</em>
+                  <p>[공지] 교육혁신원 생성형 AI 자료실 게시판 안내<br>
+                    (구글 제미나이 Pro 1년간 무료 등록 안내 포함)
+                  </p>
+                  <span>2025-07-21</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+
+            <div class="box swiper-slide">
+              <a href="#">
+                <div class="img_box">
+                  <img src="./images/청년인던-school-834138_1280.jpg" alt="">
+                </div><!-- //.img_box -->
+                <div class="txt_box">
+                  <em>2025년 8월 1일(금) 14시</em>
+                  <p>2025년도 한국체육대학교 청년인턴 2차 추가채용 서류전형 합격자 공고</p>
+                  <span>2025-07-25</span>
+                </div><!-- //.txt_box -->
+              </a>
+            </div><!-- //.box -->
+          </div>
+        </div><!-- //.slide_wrap -->
+      </section><!-- //.blog -->
+      
+      <div class="kpssa_mark">
+        <div class="inner">
+          <a href="#">
+            <div class="txt_box">
+              <p><em>한국체육대학교</em>우리는 미래를 준비하고 스포츠로 세상을 변화시키는 데 최선을 다 할 것입니다.</p>
+              <span>다시 한 번 한국체육대학교를 찾아주신 여러분을 진심으로 환영하며<br>앞으로의 발전과 성장에 함께 기대해 주시기를 바랍니다.</span>
+            </div>
+            <h2 class="blind2">K-PaaS 전문 기업 인증</h2>
+            <div class="img_box">
+              <img src="./images/한체대123img_logo04.png" alt="K-Paas">
+              <img src="./images/한체대 로고img.png" alt="K-Paas 적합성">
+            </div>
+          </a>
+        </div><!-- //.inner -->
+      </div><!-- //.kpssa_mark -->
+
+
+      <section class="contact">
+        <h2 class="blind">이노그리드 안내</h2>
+        <div class="inner">
+          <article>
+            <a href="#">
+              <h3>오시는 길</h3>
+              <p>한국체육대학교에 오시는 길을<br>안내해 드립니다.</p>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <h3>자료실</h3>
+              <p>한국체육대학교의 다양한<br>소개 자료를 신청해 보세요.</p>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <h3>문의하기</h3>
+              <p>도움이 필요하신가요?<br>학교행정실로 문의를 해보세요.</p>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <h3>수업/학적 등록</h3>
+              <p> 수강취소를 희망하는 학생들의<br>수강신청 가능합니다.</p>
+            </a>
+          </article>
+        </div><!-- //.inner -->
+      </section><!-- //.contact -->
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="f_top">
+          <h2 class="blind">이노그리드 회사 정보</h2>
+          <div class="logo_box">
+            <div class="logo">한국체육대학교</div><!-- //.logo -->
+            <div class="logo_b">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">이메일주소수집거부</a>
+              <a href="#">대학정보공시</a>
+              <a href="#">대학정보공시</a>
+            </div><!-- //.logo_b -->
+          </div><!-- //.logo_box -->
+          <div class="btn_box">
+            <div class="sns">
+              <a href="#"><i class="fa-solid fa-b"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div><!-- //.sns -->
+            <div class="select_box">
+              <button type="button">관련사이트 <i class="fa-solid fa-angle-up"></i></button>
+              <ul>
+                <li><a href="#">관련사이트1</a></li>
+                <li><a href="#">관련사이트2</a></li>
+                <li><a href="#">관련사이트3</a></li>
+                <li><a href="#">관련사이트4</a></li>
+                <li><a href="#">관련사이트5</a></li>
+                <li><a href="#">관련사이트6</a></li>
+                <li><a href="#">관련사이트7</a></li>
+                <li><a href="#">관련사이트8</a></li>
+                <li><a href="#">관련사이트9</a></li>
+              </ul>
+            </div><!-- //.select_box -->
+            <div class="top">
+              <a href="#">top<i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+          </div><!-- //.btn_box -->
+        </div><!-- //.f_top -->
+        <div class="f_bottom">
+          <h2 class="blind">주소 및 개인정보처리방침</h2>
+          <ul class="left">
+            <li>
+              <em>05541 서울시 송파구 양재대로 1239(오륜동)</em>
+              <div class="f_con1">
+                <span>TEL : 02.410-6700 </span>
+                <span> FAX : 02.410-1877</span>
+<!--               </div>
+            </li>
+            <li><em>하이퍼스퀘어 </em><span>(우) 04551 서울특별시 중구 을지로 100 파인에비뉴 B동 5층 (을지로2가 203)</span></li>
+            <li><em>대전지사 </em><span>(우) 34091 대전광역시 유성구 노은동로 75번길 85-30 (노은동 549-5)</span></li>
+            <li><em>광주지사 </em><span>(우) 61949 광주광역시 서구 상무중앙로 78번길 5-6 (치평동 1217-9)</span></li>
+          </ul> -->
+<!--           <div class="right">
+            <p class="f_con1">
+              <span>대표이사김명진</span>
+              <span>사업자등록번호 220-87-36743</span>
+              <span>통신판매업신고 제 2012-서울강남-00571호</span>
+              <a href="#">개인정보처리방침</a>
+            </p>
+            <p class="f_copy"> -->
+              COPYRIGHT(C) KOREA NATIONAL SPORT UNIVERSITY. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+        </div><!-- //.f_bottom -->
+      </div><!-- //.inner -->
+    </footer>
+  </div>
+</body>
+
+</html>
