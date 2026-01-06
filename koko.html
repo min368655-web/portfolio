@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Space Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ================= GNB ================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7df9ff;
+    text-shadow: 0 0 10px #7df9ff;
+}
+
+/* ================= 별 배경 ================= */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 6px;
+    animation: glow 2s infinite alternate;
+}
+
+.hero p {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* ================= SECTION ================= */
+.section {
+    padding: 120px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #7df9ff;
+    padding-left: 15px;
+}
+
+/* ================= PROJECT ================= */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #7df9ff;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(125,249,255,0.15);
+    border: 1px solid #7df9ff;
+}
+
+/* ================= EFFECT ================= */
+@keyframes glow {
+    from { text-shadow: 0 0 10px #7df9ff; }
+    to { text-shadow: 0 0 30px #7df9ff; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- GNB -->
+<nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- 별 배경 -->
+<canvas id="stars"></canvas>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <h1>MY SPACE</h1>
+    <p>Exploring Creativity & Code</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>ABOUT ME</h2>
+    <p>
+        우주처럼 끝없이 확장되는 가능성을 가진 개발자입니다.
+        새로운 기술과 창의적인 아이디어를 탐험합니다.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>PROJECTS</h2>
+    <div class="projects">
+        <div class="card">🚀 Project One</div>
+        <div class="card">🪐 Project Two</div>
+        <div class="card">🌌 Project Three</div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills-container">
+            <div class="skill-node">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-node">
+                <span>CSS3</span>
+            </div>
+            <div class="skill-node">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-node">
+                <span>Photoshop</span>
+            </div>
+            <div class="skill-node">
+                <span>illust<p>ration</p></span>
+            </div>
+            <div class="skill-node">
+                <span>Pigma</span>
+            </div>
+        </div>
+    </section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>CONTACT</h2>
+    <p>Email : example@email.com</p>
+</section>
+
+<script>
+const canvas = document.getElementById("stars");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+
+let stars = [];
+for (let i = 0; i < 160; i++) {
+    stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 1.5,
+        s: Math.random() * 0.6 + 0.2
+    });
+}
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "white";
+
+    stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+        ctx.fill();
+
+        star.y += star.s;
+        if (star.y > canvas.height) {
+            star.y = 0;
+            star.x = Math.random() * canvas.width;
+        }
+    });
+
+    requestAnimationFrame(animate);
+}
+animate();
+
+window.addEventListener("resize", resize);
+</script>
+
+</body>
+</html>

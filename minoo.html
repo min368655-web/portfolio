@@ -1,11 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative UI Designer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #0b0f3a;
+      --bg-deep: #070a2b;
+      --accent-pink: #c77dff;
+      --accent-blue: #6c9cff;
+      --accent-cyan: #6ef3ff;
+      --text-main: #ffffff;
+      --text-muted: #b9c0ff;
+      --card-bg: rgba(255,255,255,0.08);
+      --radius-xl: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top left, #1a1f6b, transparent 60%),
+                  radial-gradient(circle at bottom right, #12084d, transparent 60%),
+                  var(--bg-main);
+      color: var(--text-main);
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(7,10,43,0.6);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav ul {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* HERO */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 140px 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .hero span { color: var(--accent-blue); }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: .3s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent-pink), var(--accent-blue));
+      color: white;
+    }
+
+    .btn.ghost {
+      background: rgba(255,255,255,0.15);
+      color: white;
+    }
+
+    /* FLOATING ORBS */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(2px);
+      animation: float 12s infinite alternate ease-in-out;
+    }
+
+    .orb.pink {
+      width: 220px; height: 220px;
+      background: radial-gradient(circle at 30% 30%, #ffd6ff, var(--accent-pink));
+      top: 120px; right: 10%;
+    }
+
+    .orb.blue {
+      width: 140px; height: 140px;
+      background: radial-gradient(circle at 30% 30%, #dbe7ff, var(--accent-blue));
+      top: 260px; right: 22%;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-40px); }
+    }
+
+    /* ABOUT */
+    .about-box {
+      background: radial-gradient(circle at top, #3b2d7d, #141654);
+      border-radius: var(--radius-xl);
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-box p { color: var(--text-muted); line-height: 1.7; }
+
+    /* WORK */
+    .work-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .tab {
+      padding: 12px 22px;
+      background: var(--card-bg);
+      border-radius: 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .work-card {
+      background: linear-gradient(160deg, #1a1f6b, #0b0f3a);
+      border-radius: 20px;
+      padding: 24px;
+      transition: transform .4s ease;
+    }
+
+    .work-card:hover { transform: translateY(-10px); }
+
+    /* CONTACT */
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: var(--card-bg);
+      border-radius: var(--radius-xl);
+      padding: 50px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      margin-bottom: 14px;
+      background: rgba(255,255,255,0.12);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .about-box, .contact-box { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    
+
+<header>
+  <nav class="nav">
+    <strong>S</strong>
+    <ul>
+      <li>Home</li>
+      <li>About me</li>
+      <li>Work</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Creative UI Designer<br><span>Sourasith Phomhome</span><br>Based in Montreal</h1>
+  <div class="hero-buttons">
+    <button class="btn ghost">Hire me</button>
+    <button class="btn primary">Download CV</button>
+  </div>
+
+  <div class="orb pink"></div>
+  <div class="orb blue"></div>
+</section>
+
+<section>
+  <div class="about-box">
+    <div>
+      <h2>About me</h2>
+      <p>
+        My name is Sourasith Phomhome. I’m a UI designer and illustrator based in Montreal.
+        I’m passionate about creating digital experiences that combine design and interaction.
+      </p>
+    </div>
+    <div></div>
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">My recent work</h2>
+  <div class="work-tabs">
+    <div class="tab">Designs</div>
+    <div class="tab">UI Designs</div>
+    <div class="tab">Mockups</div>
+  </div>
+
+  <div class="work-grid">
+    <div class="work-card">Project 01</div>
+    <div class="work-card">Project 02</div>
+    <div class="work-card">Project 03</div>
+  </div>
+</section>
+
+<section>
+  <div class="contact-box">
+    <div>
+      <h3>Get in touch</h3>
+      <p>I’m very approachable and would love to speak to you.</p>
+    </div>
+    <div>
+      <input placeholder="Name" />
+      <input placeholder="Email" />
+      <input placeholder="Subject" />
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button class="btn primary">Send message</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Creative UI Designer Portfolio
+</footer>
+
 </body>
 </html>
